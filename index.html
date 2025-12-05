@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume - Hemanth Balakrishna</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .a4-page {
+            width: 210mm;
+            height: 297mm;
+            background-color: white;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid #333;
+            padding: 35px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header {
+            border-bottom: 3px solid #2d04e6;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .a4-page h1 {
+            margin: 0 0 5px 0;
+            color: #1a1a1a;
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            letter-spacing: 0.5px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: clamp(0.75rem, 1.3vw, 0.9rem);
+            color: #555;
+            margin-top: 8px;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: clamp(1rem, 2.2vw, 1.3rem);
+            color: #2d04e6;
+            border-left: 4px solid green;
+            padding-left: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .section {
+            margin-bottom: 18px;
+        }
+
+        .job-entry, .education-entry {
+            margin-bottom: 12px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #1a1a1a;
+            font-size: clamp(0.85rem, 1.8vw, 1.1rem);
+        }
+
+        .company-date {
+            color: #2d04e6;
+            font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+            font-style: italic;
+            margin-bottom: 4px;
+        }
+
+        .description {
+            color: #555;
+            font-size: clamp(0.75rem, 1.4vw, 0.9rem);
+            line-height: 1.5;
+            margin-left: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            font-size: clamp(0.75rem, 1.4vw, 0.9rem);
+        }
+
+        .skill-item {
+            background-color: #e8f5e9;
+            padding: 6px 10px;
+            border-radius: 4px;
+            color: #2d7a2d;
+            border-left: 3px solid green;
+        }
+
+        ul {
+            margin-left: 20px;
+            font-size: clamp(0.75rem, 1.4vw, 0.9rem);
+            color: #555;
+            line-height: 1.6;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .a4-page p {
+            line-height: 1.6;
+            color: #555;
+            font-size: clamp(0.75rem, 1.4vw, 0.9rem);
+        }
+
+        .h3-title {
+            color: green;
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a4-page">
+        <div class="header">
+            <h1>HEMANTH BALAKRISHNA</h1>
+            <p class="h3-title">Junior Frontend Developer</p>
+            <div class="contact-info">
+                <span>📍 Dallas, Texas 75251</span>
+                <span>📞 (972) 555-0147</span>
+                <span>✉️ hemanth.balakrishna@email.com</span>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <p>Dedicated Junior Frontend Developer with proven expertise in building responsive web applications using modern technologies. Skilled in React, JavaScript, and cloud platforms (AWS). Strong problem-solving abilities with a passion for creating user-friendly interfaces and delivering quality code.</p>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-item">Frontend: HTML, CSS, JavaScript, React</div>
+                <div class="skill-item">Backend: Node.js, Express.js</div>
+                <div class="skill-item">Databases: MongoDB, PostgreSQL, SQL</div>
+                <div class="skill-item">Cloud: AWS, EC2, ECS, EKS</div>
+                <div class="skill-item">Tools: Git, Debugging, Testing</div>
+                <div class="skill-item">Frameworks: Redux, REST APIs</div>
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="job-entry">
+                <div class="company-date">Company Name, 2021 - 2023</div>
+                <div class="job-title">Junior Frontend Developer</div>
+                <ul>
+                    <li>Developed and maintained responsive web applications using React and modern JavaScript</li>
+                    <li>Collaborated with cross-functional teams to enhance user experience and implement new features</li>
+                    <li>Utilized React and Redux for state management, ensuring optimal performance</li>
+                    <li>Participated in code reviews and contributed to continuous improvement initiatives</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <div class="company-date">Tech Startup Internship, 2020</div>
+                <div class="job-title">Frontend Development Intern</div>
+                <ul>
+                    <li>Assisted in the development of internal tools and gained hands-on experience in frontend technologies</li>
+                    <li>Participated in code reviews and contributed to team meetings</li>
+                    <li>Learned best practices in software development and version control using Git</li>
+                    <li>Implemented UI components following design specifications and accessibility standards</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            
+            <div class="education-entry">
+                <div class="company-date">University of Texas at Dallas, 2020</div>
+                <div class="job-title">Bachelor of Science in Computer Science</div>
+                <p class="description">GPA: 3.7/4.0 | Relevant Coursework: Web Development, Data Structures, Algorithms</p>
+            </div>
+
+            <div class="education-entry">
+                <div class="company-date">Dallas High School, 2016</div>
+                <div class="job-title">High School Diploma</div>
+                <p class="description">Honors Graduate | Advanced Placement Courses in Mathematics and Computer Science</p>
+            </div>
+        </div>
+
+        <!-- Online Presence -->
+        <div class="section">
+            <div class="section-title">Online Presence</div>
+            <p>GitHub: github.com/hemanthbalakrishna | LinkedIn: linkedin.com/in/hemanthbalakrishna | Portfolio: hemanthbalakrishna.dev</p>
+        </div>
+    </div>
+</body>
+
+</html>
+</body>
+
+</html>
